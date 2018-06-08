@@ -8,7 +8,7 @@
 
 
 ## Instructions
-* In *FormTask* folder open **App.py** and **Run** the program
+* In **FormTask** folder open **App.py** and **Run** the program
 * The Application will run on http://127.0.0.1:5000/ 
  
   
