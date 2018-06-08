@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <title>Submissions</title>
+   <link rel="stylesheet" type="text/css" href="../static/FormsSubmissionsPage.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class = "page_info">
+  <h1>Submissions</h1>
+  <p>Form ID: {{form_id}} </p>
+    </div>
+  <br>
+  <table id="submissions_table">
+    <thead class = "heads">
+
+    </thead>
+    <tbody class = "body">
+    </tbody>
+  </table>
+    <div>
+      <br>
+        <button class="btn_to_list" type="button" id="back_btn" >Return to Forms-list</button>
+        <!--<button class="btn_to_list" type="button" id="back_btn" onclick="goTo_List()">Return to Forms-list</button>-->
+    </div>
+</div>
+<script>
+    var form_data = JSON.stringify( {{ form_data | tojson | safe }} )
+    </script>
+    <script src="/static/FormsSubmissions.js"></script>
+</body>
+</html>

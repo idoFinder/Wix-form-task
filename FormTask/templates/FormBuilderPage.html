@@ -1,0 +1,66 @@
+
+<html>
+    <head>
+        <title>Form Builder</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="static/FormBuilderPage.css" >
+    </head>
+    <body>
+
+<div class = "box">
+<div class="container">
+  <h2>Form Builder</h2>
+    <br>
+    <br>
+  <a  action="" method="post" role="form">
+    <div class="form-group">
+      <label for="field_lable">Field lable:</label>
+      <input type="text" class="form-control" id="field_lable" name="lable" placeholder="Choose lable">
+      <br>
+      <br>
+      <label for="field_name">Input name:</label>
+      <input type="text" class="form-control" id="field_name" name="name" placeholder="Choose name" required>
+      <br>
+      <br>
+      <label for="field_type">Input type:</label>
+        <select type=value class="form-control" id="field_type" name="type">
+          <option value="text">text</option>
+          <option value="color">color</option>
+          <option value="date">date</option>
+          <option email="email">email</option>
+          <option tel="tel">tel</option>
+          <option number="number">number</option>
+        </select>
+    <br>
+    </div>
+       <br>
+       <button class="btn_field" type="button" id="addField" >Add Field</button>
+       <br>
+      <br>
+       <table class="fields_table">
+    <thead class = "heads">
+      <tr>
+          <th>Id</th>
+          <th>Lable</th>
+          <th>Name</th>
+          <th>Type</th>
+      </tr>
+    </thead>
+    <tbody class = "fields" id = "fields_data" aria-placeholder="Start Adding Fields">
+    </tbody>
+  </table>
+      <br>
+      <label for="Form_name">Form name:</label>
+      <input type="text" class="form-control" id="Form_name" name="formName" placeholder="Enter The From Name">
+      <button class="btn_save" type="button" id="save_btn" >Save Form</button>
+      <br>
+      <br>
+      <button type="button" id="back_btn">Back</button></a>
+  </form>
+   <script src="static/FormBuilder.js"></script>
+  <br>
+</div>
+</div>
+</body>
+</html>

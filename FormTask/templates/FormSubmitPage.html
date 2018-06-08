@@ -1,0 +1,29 @@
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href= "/static/FormSubmitPage.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <title>Form Submit Page</title>
+</head>
+<body>
+    <div class = "page_info">
+    <h1>Form Submit</h1>
+    <p> Form Name: {{form_data['form_name']}} </p>
+    <p> Form ID: {{ form_id }}  </p>
+</div>
+    <br>
+<div class="container">
+</div>
+ <input type="submit" id= "submit_btn" value="Submit Form">
+    <!--<div id = "submit_btn"></div>-->
+    <br>
+    <br>
+     <button class="btn_back" type="button" id="backBtn" >Back</button>
+    <script>
+    var form_id = {{ form_id }}
+    var form_fields = JSON.stringify( {{ form_data.fields | tojson | safe }} )
+    var form_name = JSON.stringify( {{ form_data.form_name | tojson | safe }} )
+    </script>
+    <script src="/static/FormSubmit.js"></script>
+</body>
+</html>

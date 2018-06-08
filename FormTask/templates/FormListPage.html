@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <title>Submissions</title>
+     <link rel="stylesheet" type="text/css" href="../static/FormsListPage.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="page_info">
+  <h1 >Welcome To Forms-List <img src="../static/Wix.png" width="100" height="50"></h1>
+
+    </div>
+  <br>
+  <br>
+  <table class="forms_table">
+    <thead class = "heads">
+      <tr>
+          <th>Form Id</th>
+          <th>Form Name</th>
+          <th>#Submissions</th>
+          <th>Submit Page</th>
+          <th>Submissions Page</th>
+      </tr>
+    </thead>
+   <tbody class = "body" id = "forms_data">
+    </tbody>
+  </table>
+    <div class="create_button">
+        <br>
+        <button class="btn_to_builder" type="button" id="toBuilder_btn">Create New Form</button>
+    </div>
+</div>
+<script>
+    var forms_data = JSON.stringify( {{ forms_data | tojson | safe }} )
+    </script>
+    <script src="/static/FormsList.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+
+body{
+     background-color: #939FA5;
+}
+
+.page_info{
+ font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+font-size: 20px;
+background: ##4f8296 ;
+text-align: center;
+margin: 0;
+border-bottom: solid #555555 0.25em;
+color: #000000;
+margin: auto;
+text-align: center;
+}
+
+div p{
+    line-height: 0.2;
+}
+
+#submissions_table td, #submissions_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#submissions_table tr:nth-child(even){background-color: #87c5de;}
+
+
+.submissions_table{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.heads{
+    font: 'Raleway', serif;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font: 'Raleway', serif;
+    text-align: center;
+    background-color: #555555;
+    color: white;
+}
+
+#back_btn{
+   color: white;
+   border: 2px solid #555555;
+   background-color: #555555;
+
+}
+
+#back_btn:hover{
+    background-color: #ddd ;
+    color: #555555;
+}
+
+

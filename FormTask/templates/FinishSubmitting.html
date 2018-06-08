@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="static/FinishSubmitting.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Thank you!</title>
+</head>
+<body>
+    <div class="message">
+        <center>Form has been successfully submitted!</center>
+        <center> <img src="../static/Check.gif" height="75" width="75"></center>
+                <div class = "btn">
+         <button class="btn_field" type="button" id="continue_btn" >Continue</button>
+        </div>
+     </div>
+</body>
+<script>
+    $('#continue_btn').click( function(){
+        window.location.href='/formList';
+    });
+</script>
+</html>
