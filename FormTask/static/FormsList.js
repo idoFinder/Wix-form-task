@@ -2,7 +2,7 @@
   var parsed = JSON.parse(forms_data);
   var numOf_Forms = parsed.length;
 
-
+// display forms table
   $(document).ready ( function(){
       if( numOf_Forms == 0 ){
          $('.body').html("<h2> Nothing to show yet...  </h2>");
@@ -12,6 +12,7 @@
       }
    });
 
+// extract all froms data from parsed into html table
   function create_table_body(){
      var tableBody= '';
      for (var form=0; form< numOf_Forms; form++) {
@@ -35,6 +36,7 @@
      window.location.href='/submissions/' + id ;
   }
 
+// redirect to form builder page
   $('#toBuilder_btn').click( function(){
      window.location.href='/formBuilder';
   });

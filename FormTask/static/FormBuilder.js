@@ -1,9 +1,7 @@
 
 
-
 var result = init_form_json();
 var fieldsCounter = 1;
-var myArr = [];
 var field_value = '';
 
 //creating json sturcture
@@ -46,12 +44,10 @@ function init_field_info(field,id,lable,name,type){
     result['fields'].push(field);
 }
 
-//display the created fields on screen
+//display the created field on screen
 function show_field(field,fieldsCounter){
-    child = "<tr></tr>"
-    $('.fields').append(child);
     field_value = "<td>"+(fieldsCounter-1)+"</td><td>"+ field.lable +" </td><td>"+ field.name +"</td><td>"+ field.type + "</td>";
-    $(child).append(field_value);
+    $('.fields').append("<tr>"+ field_value +"</tr>");
 }
 
 $('#save_btn').click( function(){

@@ -4,12 +4,10 @@
   $(document).ready ( function(){
        if(parsed.length == 0){
           $('.body').html("<h3> No Submissions yet... </h3>");
-
        }else{
-
-       var numOf_Fields = parsed[0]['fields'].length;
-       place_table_headers(numOf_Fields)
-       place_submissions_input(numOf_Fields)
+           var numOf_Fields = parsed[0]['fields'].length;
+           place_table_headers(numOf_Fields)
+           place_submissions_input(numOf_Fields)
         }
   });
 

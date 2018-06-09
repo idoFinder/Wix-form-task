@@ -8,7 +8,7 @@
         var strFinal = '';
         for (var fld=0; fld<parsed.length; fld++) {
             var lable_str = '<li><label for='+fld+'>' + parsed[fld]['lable'] + '</label> ';
-            var input_str = ' <input type=' + parsed[fld]['type'] + ' id= '+fld+' name = '+ parsed[fld]['name']+ ' placeholder="Enter your input"></li> </br>'
+            var input_str = ' <input type='+parsed[fld]['type']+' id= '+fld+' name = '+ parsed[fld]['name']+' placeholder="Enter your input"></li></br>'
             strFinal += (lable_str + input_str) ;
          }
         $('.container').html(strFinal);
@@ -40,7 +40,7 @@
         });
         if(!validInput){
             alert("All fields are required");
-            result['fields']=[];
+            result['fields']=[]; //delete result
         }else{
             post_and_redirect()
         }
